@@ -1,0 +1,19 @@
+div.border {
+    border: black;
+    border-radius: 8px;
+}
+h2.position {
+    margin-top: 80px;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+
+div.position {
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div.color {
+    background-color: #f5a47d;
+}

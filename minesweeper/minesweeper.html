@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body onload="start();">
+        <h2 class="text-center text-monospace position">Minesweeper</h2>
+    <div class="container text-center border col-sm-3 position color">
+        <br>
+        <div id="header">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-6 text-center "> <strong id="remaining_mines"></strong></div>
+            <div class="col-xs-5 text-center"><strong id="time" ></strong></div>
+        </div>
+        <br><br>
+        <div class="text-center">
+            <strong id="game_result"></strong>
+        </div>
+        <canvas id="game" width="320" height="320"></canvas>
+        <div id="footer">
+            <div class=" text-center ">
+                <div class="col-xs-5">
+                     <button type="button" class="btn btn-success" onclick="newGame();">New game</button>
+                </div>
+                <div class="col-xs-3">
+                    <label for="mines">Enter mines(5-50)</label>
+                </div>
+                <div class="col-xs-3">
+                    <input class="form-control" id="mines" value="8" min="5" max="50">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

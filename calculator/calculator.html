@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="calculator">
+    <table>
+        <!-- head section -->
+        <tr>
+        <tr>
+            <td class="heading">
+                Calculator
+            </td>
+        </tr>
+        <td>
+            <input type="text" id="input" placeholder="0" >
+            <input type="text" id="answer" readonly="readonly" style="color: rgba(0,136,66,0.91);">
+        </td>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        </tr>
+        <!-- buttons section -->
+        <tr>
+            <td>
+                <input type="button" value=" CE " onclick="clearScreen()">
+                <input type="button" value=" ( ) " onclick="brackets()">
+                <input type="button" value=" &#247 " onclick="getOperand('/')">
+                <input type="button" value=" C " onclick="backspace()">
+                <br>
+                <input type="button" value=" 7 " onclick="createNumber(7)">
+                <input type="button" value=" 8 " onclick="createNumber(8)">
+                <input type="button" value=" 9 " onclick="createNumber(9)">
+                <input type="button" value=" x " onclick="getOperand('x')">
+                <br>
+                <input type="button" value=" 4 " onclick="createNumber(4)">
+                <input type="button" value=" 5 " onclick="createNumber(5)">
+                <input type="button" value=" 6 " onclick="createNumber(6)">
+                <input type="button" value=" - " onclick="getOperand('-')">
+                <br>
+                <input type="button" value=" 1 " onclick="createNumber(1)">
+                <input type="button" value=" 2 " onclick="createNumber(2)">
+                <input type="button" value=" 3 " onclick="createNumber(3)">
+                <input type="button" value=" + " onclick="getOperand('+')">
+                <br>
+                <input type="button" value=" +/- " onclick="getOperand('+/-')">
+                <input type="button" value=" 0 " onclick="createNumber(0)">
+                <input type="button"  value=" . " onclick="createNumber('.')"/>
+                <input type="button"  value=" = " onclick="compute()" style="background-color: rgba(0,189,81,0.53);">
+                <br>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

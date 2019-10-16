@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GameOfLife</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body  onload="start();">
+<h2 class="text-center text-monospace position">Game Of Life</h2>
+<div class="container text-center position border">
+        <div class="row color border"style="width: 85%">
+            <div class="col-sm-4" style="width: 3%"></div>
+
+            <div id="left_part" class="col-sm-4" style="width: 50%;">
+                <br><br>
+                <div class="text-center ">
+                    <strong id="game_result"></strong>
+                </div>
+                <br>
+                <div class="col-sm-4">
+                    <p>Remaining predators: <span id="remaining_predators">0</span></p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Remaining preys: <span id="remaining_preys">0</span></p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Iterations: <span id="iterator">0</span></p>
+                </div>
+                <br><br>
+                <canvas id="game" width="500" height="500"></canvas>
+
+            </div>
+            <div class="col-sm-4" style="width: 5%"></div>
+            <div id="right_part" class="col-sm-4" style="width: 30%;">
+                <div class=" text-center ">
+                    <br>
+                    <div>
+                        <label for="size">Enter size</label>
+                        <input class="form-control" id="size" value="25" min="4" max="100">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="prays">Enter prays</label>
+                        <input class="form-control" id="prays" value="30" min="1">
+
+                    </div>
+                    <br>
+                    <div>
+                        <label for="predators">Enter predators</label>
+                        <input class="form-control" id="predators" value="20" min="1">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="praysReproPeriod">Enter prays repro-period</label>
+                        <input class="form-control" id="praysReproPeriod"  value="15" min="0">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="predatorsReproPeriod">Enter predators repro-period</label>
+                        <input class="form-control" id="predatorsReproPeriod"  value="15" min="0">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="predatorsLife">Enter predators life</label>
+                        <input class="form-control" id="predatorsLife" value="20" min="2">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="iterations">Enter iterations</label>
+                        <input class="form-control" id="iterations" value="200" min="10">
+                    </div>
+                    <br><br>
+                    <div>
+                        <button type="button" class="btn btn-success btn-sm btn-block" onclick="newGame();" style="font-size: 150%;">Start</button>
+                    </div>
+                    <br><br>
+
+                </div>
+            </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
